@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">ShopEasy</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="filter-section">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home">Home & Garden</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-500">$100 - $500</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics" data-price="99.99">
+                    <img src="img/WirelessHeadphones.avif" alt="Wireless Headphones" class="product-image">
+                    <h3>Wireless Headphones</h3>
+                    <p class="price">$99.99</p>
+                    <button class="add-to-cart" data-id="1" data-name="Wireless Headphones" data-price="99.99">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="electronics" data-price="199.99">
+                    <img src="img/SmartWatch.avif" alt="Smart Watch" class="product-image">
+                    <h3>Smart Watch</h3>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart" data-id="2" data-name="Smart Watch" data-price="199.99">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="electronics" data-price="79.99">
+                    <img src="img/BluetoothSpeaker.avif" alt="Bluetooth Speaker" class="product-image">
+                    <h3>Bluetooth Speaker</h3>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart" data-id="3" data-name="Bluetooth Speaker" data-price="79.99">Add to Cart</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="clothing" data-price="49.99">
+                    <img src="img/T-Shirt.avif" alt="T-Shirt" class="product-image">
+                    <h3>Premium T-Shirt</h3>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" data-id="4" data-name="Premium T-Shirt" data-price="49.99">Add to Cart</button>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="clothing" data-price="89.99">
+                    <img src="img/DesignerJeans.avif" alt="Jeans" class="product-image">
+                    <h3>Designer Jeans</h3>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart" data-id="5" data-name="Designer Jeans" data-price="89.99">Add to Cart</button>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="home" data-price="129.99">
+                    <img src="img/ModernTableLamp.avif" alt="Lamp" class="product-image">
+                    <h3>Modern Table Lamp</h3>
+                    <p class="price">$129.99</p>
+                    <button class="add-to-cart" data-id="6" data-name="Modern Table Lamp" data-price="129.99">Add to Cart</button>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-category="home" data-price="59.99">
+                    <img src="img/IndoorPlant.avif" alt="Plant" class="product-image">
+                    <h3>Indoor Plant</h3>
+                    <p class="price">$59.99</p>
+                    <button class="add-to-cart" data-id="7" data-name="Indoor Plant" data-price="59.99">Add to Cart</button>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-category="electronics" data-price="299.99">
+                    <img src="img/Tablet.avif" alt="Tablet" class="product-image">
+                    <h3>Tablet</h3>
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart" data-id="8" data-name="Tablet" data-price="299.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEasy</h3>
+                    <p>Your one-stop shop for all your needs.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@shopeasy.com</p>
+                    <p>Phone: +91 (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEasy. All Rights Reserved by SAMRUDDHI NAIK.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
